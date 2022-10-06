@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let item of activeUser; let i = index">
+    {{ item }}|
+    <a href="#" (click)="onSetToinactive(i)">Click to switch to inactive</a>
+  </li>
+</ul>
